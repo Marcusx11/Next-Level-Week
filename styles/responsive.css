@@ -1,0 +1,49 @@
+/* Parte abaixo de responsividade da página para telas menores */
+/* Aplica um conjunto de regras para a aplicação de acordo com alguns parâmetros */
+@media (max-width: 900px) { /* Caso para telas com largura máxima de 900 pixels */
+    #page-home {
+        background-position-x: 70vw;
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute; /* Posiciona os elementos um cima do outro */
+        bottom: 48px;
+        left: 50%;
+        transform: translateX(-50%); /* Faz com que ache o ponto médio do eixo X*/
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+}
+
+/* Caso para telas com largura mínima de 1700 pixels para mais */
+@media(min-width: 1700px) {
+    #page-home {
+        background-position-x: 40vw;
+        background-position-y: 15vw;
+    }
+}
+
+@media(max-width: 1440px) { /* Caso para telas com largura até 1440 pixels */
+    #page-home {
+        background-position-y: 24vw;
+    }
+}
+
+@media(min-width: 1440px) { /* Caso para telas com largura mínima de 1440 pixels para mais */
+    #page-home {
+        background-position-y: 200px;
+    }
+}
+
+@media(max-height: 760px) { /* Caso para telas com altura até 760 pixels */
+    #page-home {
+        background-position-y: 200px;
+    }
+}
