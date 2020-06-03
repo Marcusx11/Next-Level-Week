@@ -1,0 +1,47 @@
+#page-create-point { /* Estilizações gerais da página */
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    /* Alinhamento da caixa pelo lado de fora desta */
+}
+
+/* Cabeçalho da página */
+#page-create-point header {
+    padding-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-create-point header a {
+    color: var(--title-color);
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+#page-create-point header a span {
+    margin-right: 9px;
+    background-image: url("../assets/icones/arrow-left.svg");
+    display: flex;
+    width: 20px;
+    height: 22px;
+} /* Fim da estilização do cabeçalho */
+
+/* Estilização do formulário de cadastro */
+#page-create-point form {
+    background-color: white;
+    margin: 60px auto;
+    /* Preenchimento da "caixa" do formulário */
+    padding: 64px;
+    border-radius: 12px;
+    max-width: 730px;
+}
+
+#page-create-point form h1 {
+    transform: translateX(12.2%); /* Centralizando o texto da tag "h1" */
+}
+
+#page-create-point form fieldset {
+    margin-top: 64px;
+}

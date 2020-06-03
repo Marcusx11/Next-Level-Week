@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt_br"> <!-- Tipo de linguagem da página -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Aceita alguns caracteres especiais -->
+    <!-- Tag abaixo configura o site para ele caber em telas de diversos tamanhos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar ponto de coleta</title>
+    
+    <!-- Tag abaixo adiciona a fonte "Roboto" e "Ubuntu" para utilização na página-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&Ubuntu:wght@700&display=swap" 
+        rel="stylesheet">
+    
+    <!-- Adicionando estilização "CSS" à página -->
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/create-point.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+</head>
+
+<body>
+    <div id="page-create-point">
+        <!-- Conteúdo da página criação de ponto de coleta -->
+
+            <!-- Cabeçalho da página -->
+            <header>
+                <img src="./assets/icones/logo.svg" alt="Logomarca" />
+
+                <a href="#">
+                    <span></span>
+                    Voltar para a home
+                </a>
+            </header>
+            <!-- Fim do cabeçalho -->
+            
+            <!-- Formulário de cadastro de um ponto de coleta -->
+            <form action="">
+                <h1>Cadastro do ponto de coleta</h1>
+                
+                <!-- Parte para preencher os dados da entidade -->
+                <fieldset>
+
+                    <legend> <!-- Legenda do fieldset -->
+                        <h2>Dados da entidade</h2>
+                    </legend>
+
+                    <div class="field"> <!-- Campo para o nome da entidade -->
+                        <label for="">Nome da entidade</label>
+                        <input type="text" name="name" /> <!-- Input de dados -->
+                    </div>
+                    
+                    <!-- Campos para endereço e número da entidade -->
+                    <div class="field-group">
+                        <div class="field"> <!-- Campo de endereço -->
+                            <label for="address">Endreço</label>
+                            <input type="text" name="address" />
+                        </div>
+
+                        <div class="field"> <!-- Campo do número do endereço -->
+                            <label for="address2">Número/Complemento</label>
+                            <input type="text" name="address2" />
+                        </div>
+                    </div>
+                    
+                    <!-- Campos para cidade e estado da entidade -->
+                    <div class="field-group">
+
+                        <div class="field"> <!-- Campo do estado -->
+                            <label for="state">Estado</label>
+                            <select name="uf" id="">
+                                <option value="">Selecione o estado</option>
+                            </select>
+                        </div>
+
+                        <div class="field"> <!-- Campo da cidade -->
+                            <label for="city">Cidade</label>
+                            <select name="city" disabled >
+                                <option valeu="">Selecione a cidade</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </fieldset>
+                <!-- Fim da parte do preenchimento de dados -->
+                
+                <!-- Parte para escolher os ítens de coleta -->
+                <fieldset>
+                    <legend>
+                        <h2>Ítens de coleta</h2>
+                    </legend>
+                </fieldset>
+                
+                <!-- Botão de envio do formulário -->
+                <button type="submit">Cadastrar ponto de coleta</button>
+            </form>
+            <!-- Fim do formulário de cadastro -->
+    </div>
+    <!-- Fim do conteúdo da página inicial -->
+
+</body>
+</html>
