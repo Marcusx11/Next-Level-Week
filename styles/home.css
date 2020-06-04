@@ -61,11 +61,12 @@
     align-items: center;
     margin-top: 40px;
     background: var(--primary-color);
-    transition: 400ms; /* Transição deste estado para o hover */
+    transition: background-color 400ms; /* Transição deste estado para o hover */
 }
 
 #page-home main a:hover { /* "hover": Propriedade de quando o mouse está em cima da tag */
     background-color: #2fb86e;
+    cursor: pointer;
 }
 
 #page-home main a span { 
